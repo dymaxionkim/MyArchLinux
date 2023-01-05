@@ -1,0 +1,62 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+general {
+    interval = 1
+    output_format = "i3bar"
+    colors = true
+    color_bad = "#ffbbbb"
+    color_good = "#bbffbb" }
+
+order += "cpu_usage"
+cpu_usage {
+    format = " %usage" }
+
+order += "memory"
+memory {
+    format = " %used of %total" }
+
+order += "disk /"
+disk "/" {
+     format = " %used of %total" }
+
+order += "load"
+load {
+     format = "猪 %5min" }
+
+order += "wireless wlan0"
+wireless wlan0 {
+     format_up = "直 %ip..%quality@%essid..%bitrate)"
+     format_down = "" }
+
+order += "ethernet enp0s3"
+ethernet enp0s3 {
+     format_up = " %ip..%speed"
+     format_down = "" }
+
+order += "battery 0"
+battery 0 {
+     format = "%status %percentage %remaining %emptytime"
+     format_down = ""
+     status_chr = "⚡ CHR"
+     status_bat = "🔋 BAT"
+     status_unk = "? UNK"
+     status_full = "☻ FULL"
+     path = "/sys/class/power_supply/BAT%d/uevent"
+     low_threshold = 10 }
+
+#order += "cpu_temperature 0"
+cpu_temperature 0 {
+     format = " %degrees 糖"
+     path = "/sys/devices/platform/coretemp.0/temp1_input" }
+
+order += "read_file uptime"
+read_file uptime {
+     format = " %content sec"
+     path = "/proc/uptime" }
+
+order += "tztime seoul"
+tztime seoul {
+     format = "%Y%m%d %H:%M:%S %Z"
+     timezone = "Asia/Seoul" }
+
