@@ -107,7 +107,7 @@ sudo mv /etc/pacman.conf /etc/pacman.conf.old
 sudo echo color >> /etc/pacman.conf
 sudo pacman -S iw wpa_supplicant dialog intel-ucode git reflector lshw unzip micro figlet screenfetch
 sudo pacman -S wget pulseaudio alsa-utils alsa-plugins pavucontrol pasystray xdg-user-dirs
-sudo pacman -S gtop htop file-roller
+sudo pacman -S gtop htop file-roller imagemagick
 sudo pacman -S xorg-server xorg-apps xorg-xinit
 sudo pacman -S i3-gaps i3blocks i3lock numlockx xclip xterm alacritty feh scrot rofi firefox vlc picom
 sudo pacman -S lxappearance
