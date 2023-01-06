@@ -238,7 +238,14 @@ yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli
 yay -S inkscape gimp jre libreoffice mupdf code ffmpeg freecad ranger convertall julia
 yay -S texlive-full pandoc
 yay -S gmsh
+```
+### Pyenv
+```
 yay -S pyenv
+pyenv install --list
+pyenv install anaconda3-2022.10
+pyenv global anaconda3-2022.10
+conda update --all
 ```
 ### ElmerFEM (Fail)
 ```
