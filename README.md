@@ -132,6 +132,9 @@ git clone https://aur.archlinux.org/yay-git.git
 chmod 777 ./yay-git
 cd yay-git
 makepkg -si
+# Multicore Build
+sudo micro /etc/makepkg.conf
+# MAKEFLAGS="-j$(nproc)"
 ```
 ### ysy pkg (example)
 ```
@@ -227,3 +230,21 @@ git config --global core.editor 'micro'
 git config --global credential.helper cache
 git config --global push.default matching
 ```
+
+## APPS
+### Utils
+```
+yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli
+yay -S inkscape gimp jre libreoffice mupdf code ffmpeg freecad ranger convertall julia
+yay -S texlive-full pandoc
+yay -S gmsh
+yay -S pyenv
+```
+### ElmerFEM (Fail)
+```
+yay -S elmerfem
+# Fatal Error: mmg/mmg3d/libmmgtypesf.h: No such file or directory
+```
+### (Not yet)
+* salome platform
+* calculix
