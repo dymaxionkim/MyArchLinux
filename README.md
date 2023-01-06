@@ -2,6 +2,8 @@
 
 _Setting Recipe & Dotfiles_
 
+![screenshot_01.png](MyArchLinux)
+
 ## Set Virtualbox
 * Use efi
 * Boot and choose menu
