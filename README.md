@@ -2,7 +2,7 @@
 
 _Setting Recipe & Dotfiles_
 
-![screenshot_01.png](MyArchLinux)
+![MyArchLinux](screenshot_01.png)
 
 ## Set Virtualbox
 * Use efi
