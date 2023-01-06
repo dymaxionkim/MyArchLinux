@@ -161,6 +161,20 @@ sudo mkdir -p /usr/share/fonts/truetype/D2CodingNerd
 sudo wget -O /usr/share/fonts/truetype/D2CodingNerd/D2CodingNerd.ttf https://github.com/kelvinks/D2Coding_Nerd/raw/master/D2Coding%20v.1.3.2%20Nerd%20Font%20Complete.ttf
 sudo fc-cache -f -v
 ```
+### Font : Eulyoo1945
+```
+cd
+wget -O Eulyoo1945.zip http://www.eulyoo.co.kr/board/down.php\?file_name\=eulyoo1945font.zip\&file_save_name\=eulyoo1945font.zip
+unzip Eulyoo1945.zip
+sudo mkdir -p /usr/share/fonts/opentype/Eulyoo1945
+sudo mv ./Eulyoo_font_201204/Eulyoo1945-Regular.otf /usr/share/fonts/opentype/Eulyoo1945/Eulyoo1945-Regular.otf
+sudo mv ./Eulyoo_font_201204/Eulyoo1945-SemiBold.otf /usr/share/fonts/opentype/Eulyoo1945/Eulyoo1945-SemiBold.otf
+rm Eulyoo1945.zip
+rm -rf Eulyoo_font_201204
+rm -rf __MACOSX
+
+sudo fc-cache -f -v
+```
 ### zsh, oh-my-zsh
 ```
 sudo pacman -S zsh
