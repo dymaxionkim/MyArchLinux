@@ -136,7 +136,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Ranger
-alias ranger="python /home/osboxes/git/ranger/ranger.py"
 export VISUAL='micro';
 export EDITOR='micro';
 
