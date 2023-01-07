@@ -139,6 +139,12 @@ eval "$(pyenv init -)"
 export VISUAL='micro';
 export EDITOR='micro';
 
+# CalculixLauncher
+alias CL="~/.CalculixLauncher/Launcher"
+
+# Salome Platform
+alias salome="~/.Salome/mesa_salome"
+
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 screenfetch -E
 figlet "Higen Robot"

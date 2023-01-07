@@ -111,7 +111,8 @@ sudo pacman -S gtop htop file-roller imagemagick
 sudo pacman -S xorg-server xorg-apps xorg-xinit
 sudo pacman -S i3-gaps i3blocks i3lock numlockx xclip xterm alacritty feh scrot rofi firefox vlc picom
 sudo pacman -S lxappearance
-sudo pacman -S papirus-icon-theme arc-gtk-theme
+sudo pacman -S papirus-icon-theme
+sudo pacman -S arc-gtk-theme
 sudo pacman -S noto-fonts-cjk
 sudo pacman -Syu
 reboot
@@ -232,6 +233,11 @@ git config --global push.default matching
 ```
 
 ## APPS
+### Themes
+```
+yay -S yaru-icon-theme kora-icon-theme paper-icon-theme-git tela-icon-theme humanity-icon-theme paper-icon-theme colloid-icon-theme-git buuf-icon-theme numix-icon-theme-git whitesur-icon-theme luv-icon-theme-git reversal-icon-theme-git nordzy-icon-theme-git arc-icon-theme-full-git faenza-icon-theme flatery-icon-theme-git win11-icon-theme-git haiku-icon-theme fluent-icon-theme-git shadow-icon-theme
+yay -S yaru-gtk-theme adw-gtk-theme catppuccin-gtk-theme-macchiato dracula-gtk-theme catppuccin-gtk-theme-frappe catppuccin-gtk-theme-latte gtk-theme-arc-gruvbox-git colloid-gtk-theme-git whitesur-gtk-theme vimix-gtk-themes qogir-gtk-theme sweet-gtk-theme-dark matcha-gtk-theme whitesur-gtk-theme-git jasper-gtk-theme-git clearlooks-phenix-gtk-theme qogir-gtk-theme-git mojave-gtk-theme numix-gtk-theme arc-solid-gtk-theme-git
+```
 ### Utils
 ```
 yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli
@@ -252,6 +258,6 @@ conda update --all
 yay -S elmerfem
 # Fatal Error: mmg/mmg3d/libmmgtypesf.h: No such file or directory
 ```
-### (Not yet)
-* salome platform
-* calculix
+### Others
+* salome platform : [Download](https://www.salome-platform.org/?page_id=15)
+* calculix : [CalCuliX Launcher](http://www.calculixforwin.com/)
