@@ -3,8 +3,10 @@ font pango:d2coding, D2Coding Nerd Font 11
 floating_modifier $mod
 tiling_drag modifier titlebar
 
+set $display "Virtual-1"
+
 # Autostart
-exec_always --no-startup-id xrandr --output Virtual-1 --mode 1920x1080
+exec_always --no-startup-id xrandr --output $display --mode 1920x1080
 exec --no-startup-id nm-applet --indicator 
 exec --no-startup-id pasystray --notify=all
 exec --no-startup-id xclip
@@ -26,6 +28,16 @@ bindsym $mod+Ctrl+s exec rofi -show window -show-icons
 bindsym $mod+Ctrl+f exec pcmanfm
 bindsym $mod+Ctrl+w exec firefox
 bindsym $mod+Ctrl+v exec pavucontrol
+
+# xrandr
+mode "[1]1920x1200, [2]1920x1080, [3]1360x768" {
+	bindsym 1 exec xrandr --output $display --mode 1920x1200
+	bindsym 2 exec xrandr --output $display --mode 1920x1080
+	bindsym 3 exec xrandr --output $display --mode 1360x768
+	bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+m mode "[1]1920x1200, [2]1920x1080, [3]1360x768"
 
 # Config
 mode "[1]zshrc, [2]alacritty, [3]i3, [4]i3status, [5]kime, [6]picom" {
