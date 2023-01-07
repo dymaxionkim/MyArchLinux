@@ -233,10 +233,10 @@ git config --global push.default matching
 ```
 
 ## APPS
-### Themes
+### Themes (option)
 ```
-yay -S yaru-icon-theme kora-icon-theme paper-icon-theme-git tela-icon-theme humanity-icon-theme paper-icon-theme colloid-icon-theme-git buuf-icon-theme numix-icon-theme-git whitesur-icon-theme luv-icon-theme-git reversal-icon-theme-git nordzy-icon-theme-git arc-icon-theme-full-git faenza-icon-theme flatery-icon-theme-git win11-icon-theme-git haiku-icon-theme fluent-icon-theme-git shadow-icon-theme
-yay -S yaru-gtk-theme adw-gtk-theme catppuccin-gtk-theme-macchiato dracula-gtk-theme catppuccin-gtk-theme-frappe catppuccin-gtk-theme-latte gtk-theme-arc-gruvbox-git colloid-gtk-theme-git whitesur-gtk-theme vimix-gtk-themes qogir-gtk-theme sweet-gtk-theme-dark matcha-gtk-theme whitesur-gtk-theme-git jasper-gtk-theme-git clearlooks-phenix-gtk-theme qogir-gtk-theme-git mojave-gtk-theme numix-gtk-theme arc-solid-gtk-theme-git
+yay -S yaru-icon-theme
+yay -S yaru-gtk-theme
 ```
 ### Utils
 ```
