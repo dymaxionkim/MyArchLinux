@@ -198,7 +198,6 @@ bar {
         position top
         height 20
         output primary
-        font pango:D2Coding 11
         separator_symbol "  "
 }
 bindsym $mod+m bar mode toggle
