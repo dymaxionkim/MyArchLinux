@@ -222,6 +222,11 @@ cp -r $HOME/git/MyArchLinux/Wallpaper $HOME/Pictures/
 cd
 reboot
 ```
+### automount
+```
+sudo pacman -S udisks2 udiskie
+sudo systemctl enable udisks2
+```
 ### git
 ```
 git config --global user.email "...@gmail.com"
@@ -259,5 +264,5 @@ yay -S elmerfem
 # Fatal Error: mmg/mmg3d/libmmgtypesf.h: No such file or directory
 ```
 ### Others
-* salome platform : [Download](https://www.salome-platform.org/?page_id=15)
+* salome platform : [Download](https://www.salome-platform.org/?page_id=15), [Salome_Plugins](https://github.com/ScopeIngenieria/Salome_Plugins)
 * calculix : [CalCuliX Launcher](http://www.calculixforwin.com/)
