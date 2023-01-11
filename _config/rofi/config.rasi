@@ -1,0 +1,8 @@
+configuration {
+  sidebar-mode:  true;
+  hide-scrollbar: true;
+  combi-modi: "window,drun";
+  show: "combi";
+  monitor: "-4";
+}
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
