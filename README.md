@@ -243,6 +243,17 @@ git config --global push.default matching
 yay -S yaru-icon-theme
 yay -S yaru-gtk-theme
 ```
+### cli-visualizer
+```
+yay -S cli-visualizer
+mkdir ~/.config/vis
+mkdir ~/.config/vis/colors/
+micro ~/.config/vis/colors/rainbow
+# colors.scheme=rainbow
+micro ~/.config/vis/config  
+# audio.sources=pulse
+vis
+```
 ### Utils
 ```
 yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli
