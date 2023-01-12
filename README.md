@@ -250,6 +250,14 @@ mv $HOME/.config/vis $HOME/.config/vis.old
 cp -r $HOME/git/MyArchLinux/_config/vis/ $HOME/.config/vis/
 vis
 ```
+### cron & wallpaper
+```
+sudo pacman -S cronie
+sudo systemctl enable cronie.service --now
+crontab -e
+# */1 * * * * DISPLAY=:0.0 /usr/bin/feh --randomize --bg-fill /home/osboxes/Pictures/Wallpaper/*
+crontab -l
+```
 ### Utils
 ```
 yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli
