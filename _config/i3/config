@@ -23,8 +23,7 @@ bindsym --release $mod+Print exec scrot -s '%Y%m%d_%H%M%S_$wx$h.png' -e 'mv $f ~
 bindsym $mod+p exec feh --randomize --bg-fill /home/osboxes/Pictures/Wallpaper/*
 ## etc
 bindsym $mod+Return exec alacritty
-bindsym $mod+Ctrl+d exec rofi -show drun -show-icons
-bindsym $mod+Ctrl+s exec rofi -show window -show-icons
+bindsym $mod+Ctrl+d exec rofi -show combi
 bindsym $mod+Ctrl+f exec pcmanfm
 bindsym $mod+Ctrl+w exec firefox
 bindsym $mod+Ctrl+v exec pavucontrol
