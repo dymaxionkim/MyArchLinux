@@ -95,9 +95,9 @@ reboot
 ### adduser in root
 ```
 pacman -S sudo
-adduser -m osboxes
+useradd -m osboxes
 passwd osboxes
-mv /etc/sudoers /etc/sudoers.old
+cp /etc/sudoers /etc/sudoers.old
 echo osboxes ALL=(ALL:ALL) ALL >> /etc/sudoers
 exit
 ```
@@ -109,7 +109,7 @@ sudo pacman -S iw wpa_supplicant dialog intel-ucode git reflector lshw unzip mic
 sudo pacman -S wget pulseaudio alsa-utils alsa-plugins pavucontrol pasystray xdg-user-dirs
 sudo pacman -S gtop htop file-roller imagemagick
 sudo pacman -S xorg-server xorg-apps xorg-xinit
-sudo pacman -S i3-gaps i3blocks i3lock numlockx xclip xterm alacritty feh scrot rofi firefox vlc picom
+sudo pacman -S i3-gaps i3blocks i3status i3lock numlockx xclip xterm alacritty feh scrot rofi firefox vlc picom
 sudo pacman -S lxappearance
 sudo pacman -S papirus-icon-theme
 sudo pacman -S arc-gtk-theme
@@ -246,12 +246,8 @@ yay -S yaru-gtk-theme
 ### cli-visualizer
 ```
 yay -S cli-visualizer
-mkdir ~/.config/vis
-mkdir ~/.config/vis/colors/
-micro ~/.config/vis/colors/rainbow
-# colors.scheme=rainbow
-micro ~/.config/vis/config  
-# audio.sources=pulse
+mv $HOME/.config/vis $HOME/.config/vis.old
+cp -r $HOME/git/MyArchLinux/_config/vis/ $HOME/.config/vis/
 vis
 ```
 ### Utils
