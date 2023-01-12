@@ -1,8 +1,52 @@
 configuration {
-  sidebar-mode:  true;
-  hide-scrollbar: true;
-  combi-modi: "window,drun";
+  modi: [drun,run,window,ssh];
+  combi-modi: [drun,run,ssh];
+  sidebar-mode: true;
+  fixed-num-lines: true;
+  font: "D2Coding Nerd Font 12";
+  
+  terminal: "alacritty";
+  ssh-client: "ssh";
+
+  show-icons: true;
+  icon-theme: "Yaru-red-dark";
+
+  //sort: false;
+  levenshtein-sort: true;
+
+  //matching: "fuzzy";
+
+  drun-match-fields: [name,generic,exec,categories];
+  width: 400;
+  lines: 20;
+  columns: 2;
+  //location: 0;
+  //padding: 5;
+  bw: 1;
+
+  // ssh-command: "{terminal} -e {ssh-client} {host}";
+  ssh-command: "{terminal} -e {ssh-client} -p 5022 osboxes@dymaxionkim.iptime.org";
+  ssh-command: "{terminal} -e {ssh-client} -p 22 ubuntu@152.67.796.70";
+  ssh-command: "{terminal} -e {ssh-client} -p 22 ubuntu@144.24.83.13";
+  ssh-command: "{terminal} -e {ssh-client} cio@wiki.higenmotor.com";
+  ssh-command: "{terminal} -e {ssh-client} lab@wiki.higenmotor.com";
+  ssh-command: "{terminal} -e {ssh-client} mech@10.124.1.61";
+
+  /*	run-command: "{cmd}";*/
+  /*	run-list-command: "";*/
+  /*	run-shell-command: "{terminal} -e {cmd}";*/
+
+  /*	window-command: "xkill -id {window}";*/
+  /*	window-match-fields: "all";*/
+
+  /*	disable-history: false;*/
+  /*	case-sensitive: false;*/
+  /*	cycle: true;*/
+  /*	eh: 1;*/
+  /*	auto-select: false;*/
+  /*	parse-hosts: false;*/
+  /*	parse-known-hosts: true;*/
+
   show: "combi";
-  monitor: "-4";
 }
 @theme "/usr/share/rofi/themes/Arc-Dark.rasi"
