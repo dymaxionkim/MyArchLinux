@@ -1,2 +1,2 @@
 audio.sources=pulse
-colors.scheme=rainbow,blue,white,basic_colors
+colors.scheme=rainbow,blue,white,basic_colors,gray_colors
