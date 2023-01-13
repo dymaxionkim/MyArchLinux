@@ -37,11 +37,11 @@ ethernet enp0s3 {
 order += "battery 0"
 battery 0 {
      format = "%status %percentage %remaining %emptytime"
-     format_down = ""
-     status_chr = "⚡ CHR"
-     status_bat = "🔋 BAT"
-     status_unk = "? UNK"
-     status_full = "☻ FULL"
+     format_down = " No Battery"
+     status_chr = "⚡ Charging"
+     status_bat = " Battery"
+     status_unk = "? Unkown"
+     status_full = " Full"
      path = "/sys/class/power_supply/BAT%d/uevent"
      low_threshold = 10 }
 
@@ -52,7 +52,7 @@ cpu_temperature 0 {
 
 order += "read_file uptime"
 read_file uptime {
-     format = " %content sec"
+     format = "祥 %content sec"
      path = "/proc/uptime" }
 
 order += "tztime seoul"
