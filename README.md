@@ -283,20 +283,22 @@ cd ~/git/elmerfem
 mkdir build
 cd build
 
-## with OpenMPI, without GUI
+## Check with OpenMPI, without GUI
 cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE
 
-## with Netcdf, MUMPS (Fail)
+## Check with Netcdf, MUMPS
 sudo pacman -S netcdf netcdf-fortran
 yay -S metis parmetis
-conda install gxx_linux-64 gfortran_linux-64
-pip install kerb-sts
-yay -S mumps mumps-par --> error
+pyenv versions
+pyenv global system
+yay -S mumps
+pyenv global anaconda3-2022.10
+pyenv versions
 cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_Mumps:BOOL=TRUE
 
-## with GUI
+## cmake with GUI
 yay -S qt5 qwt
-cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_ELMERGUI:BOOLEAN=TRUE
+cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_ELMERGUI:BOOLEAN=TRUE -DWITH_Mumps:BOOL=TRUE
 
 ## Compile & Install
 make -j8
@@ -306,11 +308,16 @@ ls /usr/local/bin/Elmer*
 
 ### Paraview
 * download : https://www.paraview.org/download/
+* Extract in `~/.Paraview`
 * pre-requisite :
 ```
 sudo pacman -Syu libxcrypt-compat
 ```
 
-### Others
-* salome platform : [Download](https://www.salome-platform.org/?page_id=15), [Salome_Plugins](https://github.com/ScopeIngenieria/Salome_Plugins)
-* calculix : [CalCuliX Launcher](http://www.calculixforwin.com/)
+### Salome Platform
+* Download : [Download](https://www.salome-platform.org/?page_id=15)
+* Extract in `~/.Salome`
+
+### CalCuliX Launcher
+* Download : [CalCuliX Launcher](http://www.calculixforwin.com/)
+* Extract in `~/.CalculixLauncher`
