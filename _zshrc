@@ -145,6 +145,9 @@ alias CL="~/.CalculixLauncher/Launcher"
 # Salome Platform
 alias salome="~/.Salome/mesa_salome"
 
+# Paraview
+alias paraview="~/.Paraview/bin/paraview"
+
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 screenfetch -E
 figlet "Higen Robot"

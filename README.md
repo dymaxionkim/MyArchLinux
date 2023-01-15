@@ -273,11 +273,44 @@ pyenv install anaconda3-2022.10
 pyenv global anaconda3-2022.10
 conda update --all
 ```
-### ElmerFEM (Fail)
+### ElmerFEM
 ```
-yay -S elmerfem
-# Fatal Error: mmg/mmg3d/libmmgtypesf.h: No such file or directory
+## Common
+cd ~/git
+git clone https://github.com/ElmerCSC/elmerfem.git
+sudo pacman -S base-devel cmake gcc-fortran openmpi openblas lapack
+cd ~/git/elmerfem
+mkdir build
+cd build
+
+## with OpenMPI, without GUI
+cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE
+
+## with Netcdf, MUMPS (Fail)
+sudo pacman -S netcdf netcdf-fortran
+yay -S metis parmetis
+conda install gxx_linux-64 gfortran_linux-64
+pip install kerb-sts
+yay -S mumps mumps-par --> error
+cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_Mumps:BOOL=TRUE
+
+## with GUI
+yay -S qt5 qwt
+cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_ELMERGUI:BOOLEAN=TRUE
+
+## Compile & Install
+make -j8
+sudo make install
+ls /usr/local/bin/Elmer*
 ```
+
+### Paraview
+* download : https://www.paraview.org/download/
+* pre-requisite :
+```
+sudo pacman -Syu libxcrypt-compat
+```
+
 ### Others
 * salome platform : [Download](https://www.salome-platform.org/?page_id=15), [Salome_Plugins](https://github.com/ScopeIngenieria/Salome_Plugins)
 * calculix : [CalCuliX Launcher](http://www.calculixforwin.com/)
