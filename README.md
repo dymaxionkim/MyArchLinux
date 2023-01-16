@@ -237,12 +237,12 @@ git config --global credential.helper cache
 git config --global push.default matching
 ```
 
-## APPS
 ### Themes (option)
 ```
 yay -S yaru-icon-theme
 yay -S yaru-gtk-theme
 ```
+
 ### cli-visualizer
 ```
 yay -S cli-visualizer
@@ -250,6 +250,7 @@ mv $HOME/.config/vis $HOME/.config/vis.old
 cp -r $HOME/git/MyArchLinux/_config/vis/ $HOME/.config/vis/
 vis
 ```
+
 ### cron & wallpaper
 ```
 sudo pacman -S cronie
@@ -258,6 +259,7 @@ crontab -e
 # */1 * * * * DISPLAY=:0.0 /usr/bin/feh --randomize --bg-fill /home/osboxes/Pictures/Wallpaper/*
 crontab -l
 ```
+
 ### Utils
 ```
 yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli
@@ -265,6 +267,7 @@ yay -S inkscape gimp jre libreoffice mupdf code ffmpeg freecad ranger convertall
 yay -S texlive-full pandoc
 yay -S gmsh
 ```
+
 ### Pyenv
 ```
 yay -S pyenv
@@ -273,20 +276,23 @@ pyenv install anaconda3-2022.10
 pyenv global anaconda3-2022.10
 conda update --all
 ```
+
 ### ElmerFEM
+#### Common
 ```
-## Common
 cd ~/git
 git clone https://github.com/ElmerCSC/elmerfem.git
 sudo pacman -S base-devel cmake gcc-fortran openmpi openblas lapack
 cd ~/git/elmerfem
 mkdir build
 cd build
-
-## Check with OpenMPI, without GUI
+```
+#### Check with OpenMPI, without GUI
+```
 cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE
-
-## Check with Netcdf, MUMPS
+```
+#### Check with Netcdf, MUMPS
+```
 sudo pacman -S netcdf netcdf-fortran
 yay -S metis parmetis
 pyenv versions
@@ -295,12 +301,14 @@ yay -S mumps
 pyenv global anaconda3-2022.10
 pyenv versions
 cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_Mumps:BOOL=TRUE
-
-## cmake with GUI
+```
+#### cmake with GUI
+```
 yay -S qt5 qwt
 cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_ELMERGUI:BOOLEAN=TRUE -DWITH_Mumps:BOOL=TRUE
-
-## Compile & Install
+```
+#### Compile & Install
+```
 make -j8
 sudo make install
 ls /usr/local/bin/Elmer*
@@ -309,15 +317,23 @@ ls /usr/local/bin/Elmer*
 ### Paraview
 * download : https://www.paraview.org/download/
 * Extract in `~/.Paraview`
-* pre-requisite :
+* pre-requisite before run :
 ```
-sudo pacman -Syu libxcrypt-compat
+sudo pacman -S libxcrypt-compat
 ```
 
 ### Salome Platform
 * Download : [Download](https://www.salome-platform.org/?page_id=15)
 * Extract in `~/.Salome`
+* Salome 9.9 : Not working explode command (no solution yet)
 
 ### CalCuliX Launcher
 * Download : [CalCuliX Launcher](http://www.calculixforwin.com/)
 * Extract in `~/.CalculixLauncher`
+* Multicore :
+```
+cp ~/git/MyArchLinux/_pam_environment ~/.pam_environment
+micro ~/.pam_environment
+```
+
+# Fin
