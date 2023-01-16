@@ -137,7 +137,7 @@ makepkg -si
 sudo micro /etc/makepkg.conf
 # MAKEFLAGS="-j$(nproc)"
 ```
-### ysy pkg (example)
+### yay pkg (example)
 ```
 yay -S sampler
 ```
@@ -290,22 +290,22 @@ cd build
 #### Check with OpenMPI, without GUI
 ```
 cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE
+rm -rf *
 ```
 #### Check with Netcdf, MUMPS
 ```
 sudo pacman -S netcdf netcdf-fortran
-yay -S metis parmetis
+yay -S metis parmetis scotch
 pyenv versions
 pyenv global system
 yay -S mumps
 pyenv global anaconda3-2022.10
 pyenv versions
-cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_Mumps:BOOL=TRUE
 ```
 #### cmake with GUI
 ```
 yay -S qt5 qwt
-cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_ELMERGUI:BOOLEAN=TRUE -DWITH_Mumps:BOOL=TRUE
+cmake .. -DWITH_OpenMP:BOOLEAN=TRUE -DWITH_MPI:BOOLEAN=TRUE -DWITH_ELMERGUI:BOOLEAN=TRUE
 ```
 #### Compile & Install
 ```
