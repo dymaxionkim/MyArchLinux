@@ -1,3 +1,10 @@
 #! /bin/sh
+
+# X-screen Saver off
+xset -dpms
+xset s off
+xset s noblank
+
+# Start
 xrdb -merge ~/.Xresources
 exec i3
