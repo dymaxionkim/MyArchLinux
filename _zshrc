@@ -139,6 +139,9 @@ eval "$(pyenv init -)"
 export VISUAL='micro';
 export EDITOR='micro';
 
+# CAE
+alias cae="~/.cae/cae.sh"
+
 # CalculixLauncher
 alias CL="~/.CalculixLauncher/Launcher"
 

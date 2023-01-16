@@ -321,11 +321,13 @@ ls /usr/local/bin/Elmer*
 ```
 sudo pacman -S libxcrypt-compat
 ```
+* Run : `paraview`
 
 ### Salome Platform
 * Download : [Download](https://www.salome-platform.org/?page_id=15)
 * Extract in `~/.Salome`
 * Salome 9.9 : Not working explode command (no solution yet)
+* Run : `salome`
 
 ### CalCuliX Launcher
 * Download : [CalCuliX Launcher](http://www.calculixforwin.com/)
@@ -335,5 +337,22 @@ sudo pacman -S libxcrypt-compat
 cp ~/git/MyArchLinux/_pam_environment ~/.pam_environment
 micro ~/.pam_environment
 ```
+* Run : `CL`
+
+### calculix/cae
+* Download : [Releases](https://github.com/calculix/cae/releases)
+* Extract in `~/.cae`
+* pre-requisite before run :
+```
+pyenv global system
+sudo pip install xlib
+pyenv global anaconda3-2022.10
+```
+* Run :
+```
+pyenv global system
+cae
+pyenv global anaconda3-2022.10
+``
 
 # Fin
