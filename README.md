@@ -352,7 +352,7 @@ micro ~/.pam_environment
 * pre-requisite before run :
 ```
 pyenv global system
-sudo pip install xlib
+sudo pip install xlib PyQt5 PyQtWebengine
 pyenv global anaconda3-2022.10
 ```
 * Run :
