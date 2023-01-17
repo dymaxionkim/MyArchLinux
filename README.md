@@ -302,6 +302,13 @@ yay -S mumps
 pyenv global anaconda3-2022.10
 pyenv versions
 ```
+#### HYPRE
+```
+pyenv global system
+yay -S hypre
+pyenv global anaconda3-2022.10
+pyenv versions
+```
 #### cmake with GUI
 ```
 yay -S qt5 qwt
