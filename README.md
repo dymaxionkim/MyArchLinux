@@ -262,7 +262,7 @@ crontab -l
 
 ### Utils
 ```
-yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli
+yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli logo-ls
 yay -S inkscape gimp jre libreoffice mupdf code ffmpeg freecad ranger convertall julia
 yay -S texlive-full pandoc
 yay -S gmsh
@@ -322,7 +322,7 @@ ls /usr/local/bin/Elmer*
 ```
 
 ### Paraview
-* download : https://www.paraview.org/download/
+* download : [Praview](https://www.paraview.org/download/)
 * Extract in `~/.Paraview`
 * pre-requisite before run :
 ```
@@ -331,7 +331,7 @@ sudo pacman -S libxcrypt-compat
 * Run : `paraview`
 
 ### Salome Platform
-* Download : [Download](https://www.salome-platform.org/?page_id=15)
+* Download : [SalomePlatform](https://www.salome-platform.org/?page_id=15)
 * Extract in `~/.Salome`
 * Salome 9.9 : Not working explode command (no solution yet)
 * Run : `salome`
