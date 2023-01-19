@@ -5,6 +5,7 @@ _Setting Recipe & Dotfiles_
 ![MyArchLinux](screenshot_01.png)
 
 ## Set Virtualbox
+* Use Intel HD Audio
 * Use efi
 * Boot and choose menu
 ```
@@ -381,5 +382,10 @@ sudo reboot now
 ln -s /media/sf_D_DRIVE ~/D_DRIVE
 ```
 
+### Disable Audio Power Saving for better sound (when using VirtualBox Intel HD Audio)
+```
+sudo micro /etc/modprobe.d/Audio.sh
+# options snd_hda_intel power_save=0 power_save_controller=N
+```
 
 # Fin
