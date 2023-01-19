@@ -140,6 +140,9 @@ export VISUAL='micro';
 export EDITOR='micro';
 
 # CAE
+alias ls="logo-ls"
+
+# CAE
 alias cae="~/.cae/cae.sh"
 
 # CalculixLauncher
