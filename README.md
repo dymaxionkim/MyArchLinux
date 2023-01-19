@@ -105,7 +105,7 @@ exit
 ```
 sudo mv /etc/pacman.conf /etc/pacman.conf.old
 sudo echo color >> /etc/pacman.conf
-sudo pacman -S iw wpa_supplicant dialog intel-ucode git reflector lshw unzip micro figlet screenfetch
+sudo pacman -S iw wpa_supplicant dialog intel-ucode git reflector lshw unzip micro figlet screenfetch hwinfo
 sudo pacman -S wget pulseaudio alsa-utils alsa-plugins pavucontrol pasystray xdg-user-dirs
 sudo pacman -S gtop htop file-roller imagemagick
 sudo pacman -S xorg-server xorg-apps xorg-xinit
@@ -361,5 +361,25 @@ pyenv global system
 cae
 pyenv global anaconda3-2022.10
 ``
+
+### VirtualBox Guest Utils
+* Install
+```
+sudo pacman -S virtualbox-guest-utils
+```
+* Start Service
+```
+sudo systemctl enable vboxservice.service
+```
+* User Group for Permission
+```
+sudo usermod -G vboxsf -a $USER
+sudo reboot now
+```
+* Link Shared Directory
+```
+ln -s /media/sf_D_DRIVE ~/D_DRIVE
+```
+
 
 # Fin
