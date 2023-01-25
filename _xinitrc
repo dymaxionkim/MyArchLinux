@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# Mount ftp
+curlftpfs ftp://dong:flux2959@dymaxionkim.iptime.org:3001/HDD1 /home/osboxes/Dymaxionkim
+
 # X-screen Saver off
 xset -dpms
 xset s off
