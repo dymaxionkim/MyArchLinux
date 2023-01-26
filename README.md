@@ -337,6 +337,11 @@ sudo pacman -S libxcrypt-compat
 * Salome 9.9 : Not working explode command (no solution yet)
 * Run : `salome`
 
+### CalCuliX
+```
+yay -S calculix-ccx calculix-cgx
+```
+
 ### CalCuliX Launcher
 * Download : [CalCuliX Launcher](http://www.calculixforwin.com/)
 * Extract in `~/.CalculixLauncher`
