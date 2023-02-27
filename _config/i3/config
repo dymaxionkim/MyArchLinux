@@ -10,8 +10,10 @@ exec_always --no-startup-id xrandr --output $display --mode 1920x1080
 exec --no-startup-id nm-applet --indicator 
 exec --no-startup-id pasystray --notify=all
 exec --no-startup-id xclip
+exec --no-startup-id numlockx &
 exec --no-startup-id kime
 #exec --no-startup-id kime-indicator
+exec --no-startup-id udiskie &
 exec --no-startup-id feh --randomize --bg-fill /home/osboxes/Pictures/Wallpaper/*
 exec_always --no-startup-id picom -b --config /home/osboxes/.config/picom/picom.conf
 

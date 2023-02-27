@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=feh_view
+Exec=feh --geometry 800x600 --scale-down --draw-filename --start-at %u
+Categories=Other;
+NoDisplay=true
+MimeType=image/png
+Terminal=false
