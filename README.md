@@ -393,4 +393,37 @@ sudo micro /etc/modprobe.d/Audio.sh
 # options snd_hda_intel power_save=0 power_save_controller=N
 ```
 
+### Automount with rclone for sftp
+
+```
+yay -S rclone
+
+rclone config
+n
+(ARCH)
+39
+(IP adress)
+(username)
+(poert number)
+y
+(password)
+(password)
+~
+(Enter)
+(Enter)
+(Enter)
+n
+y
+q
+
+mkdir ~/ARCH
+echo "" >> ~/.xinitrc
+echo "# Mount" >> ~/.xinitrc
+echo "rclone mount ARCH:/ ~/ARCH &" >> ~/.xinitrc
+```
+
+
+
+
+
 # Fin
