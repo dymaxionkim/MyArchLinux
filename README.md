@@ -267,6 +267,12 @@ yay -S btop cowsay cmatrix aafire neofetch pydf gcalcli logo-ls
 yay -S inkscape gimp jre libreoffice mupdf code ffmpeg freecad ranger convertall julia
 yay -S texlive-full pandoc
 yay -S gmsh
+yay -S exa
+```
+
+### Timezone
+```
+sudo timedatectl set-timezone Asia/Seoul
 ```
 
 ### Pyenv
