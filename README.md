@@ -4,6 +4,8 @@ _Setting Recipe & Dotfiles_
 
 [![MyArchLinux](screenshot_01.png)](https://youtu.be/AcF2DZhG3-0)
 
+[![MyArchLinux](screenshot_02.png)]
+
 ## Set Virtualbox
 * Use Intel HD Audio
 * Use efi
