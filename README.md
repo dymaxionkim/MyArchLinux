@@ -202,8 +202,14 @@ cp $HOME/git/MyArchLinux/_zshrc $HOME/.zshrc
 mv $HOME/.p10k.zsh $HOME/.p10k.zsh.old
 cp $HOME/git/MyArchLinux/_p10k.zsh $HOME/.p10k.zsh
 
+
 mv $HOME/.config/alacritty $HOME/.config/alacritty.old
 cp -r $HOME/git/MyArchLinux/_config/alacritty/ $HOME/.config/alacritty/
+
+mkdir -p ~/.config/alacritty/themes
+
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+
 
 mv $HOME/.config/i3 $HOME/.config/i3.old
 cp -r $HOME/git/MyArchLinux/_config/i3/ $HOME/.config/i3/
