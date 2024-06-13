@@ -206,7 +206,7 @@ cp $HOME/git/MyArchLinux/_p10k.zsh $HOME/.p10k.zsh
 
 
 mv $HOME/.config/alacritty $HOME/.config/alacritty.old
-cp -r $HOME/git/MyArchLinux/_config/alacritty/ $HOME/.config/alacritty/
+cp -r $HOME/git/MyArchLinux/_config/alacritty/ $HOME/.config/
 
 mkdir -p ~/.config/alacritty/themes
 
